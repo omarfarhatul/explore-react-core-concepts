@@ -7,13 +7,19 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
-      <Person></Person> 
-      <Person></Person> 
+      <Device name="Laptop" price="40000" brand="Hp"></Device>
+      <Device name="Mobile" price="15500"></Device>
       <Person></Person>
+      <Student grade="7" score="90"></Student> 
       <Student></Student> 
       <Developer></Developer>
     </>
   )
+}
+
+function Device(props){
+  // console.log(props);
+  return <h2>This device {props.name} name is {props.brand} and price {props.price}</h2>
 }
 
 function Person(){
@@ -23,7 +29,8 @@ function Person(){
   return <h3>I am a {person.name} {person.dept} {person.batch} and age is {age+add_age}</h3>
 }
 
-function Student(){
+function Student(props){
+    console.log(props);
   return (
     <div className='student'>
       <h3>This is a student</h3>
