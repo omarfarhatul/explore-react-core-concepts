@@ -16,7 +16,9 @@ function App() {
 
 function Person(){
   const age=25;
-  return <h3>I am a person with age is {age}</h3>
+  const add_age=3;
+  const person={name: 'Sakib', dept: 'Dept. of CSE', batch: 61}
+  return <h3>I am a {person} with age is {age+add_age}</h3>
 }
 
 export default App
