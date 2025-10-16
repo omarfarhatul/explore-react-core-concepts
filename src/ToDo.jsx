@@ -1,5 +1,4 @@
 // 1: Conditional rendering option 1
-
 // export default function ToDo({task, isDone}){
 //     if(isDone===true){
 //         return <li>Finished: {task}</li>
@@ -11,9 +10,24 @@
 
 
 // 2: Conditional rendering option 2
+// export default function ToDo({task, isDone}){
+//     if(isDone){
+//         return <li>Finished: {task}</li>
+//     }
+//     return <li>Work on: {task}</li>
+// }
+
+
+// 3: Conditional rendering option 3: ternary operator
+// export default function ToDo({task, isDone}){
+//     return(
+//         <li>{isDone? 'Finished':'Work on'}: {task}</li>
+//     )
+// }
+
+// 4: Conditional rendering option 4: && operator
 export default function ToDo({task, isDone}){
-    if(isDone){
-        return <li>Finished: {task}</li>
-    }
-    return <li>Work on: {task}</li>
+    return (
+        <li>{task} {isDone && ': Done'}</li>
+    )
 }
