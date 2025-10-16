@@ -11,6 +11,7 @@ function App() {
       <Device name="Mobile" price="15500"></Device>
       <Person></Person>
       <Student grade="7" score="90"></Student> 
+      <Student grade={10} score="80"></Student> 
       <Student></Student> 
       <Developer></Developer>
     </>
@@ -29,13 +30,15 @@ function Person(){
   return <h3>I am a {person.name} {person.dept} {person.batch} and age is {age+add_age}</h3>
 }
 
-function Student(props){
-    console.log(props);
+const {grade, score}={grade: '7', score: '99'};
+
+function Student({grade=1, score=12}){
+    console.log(grade, score);
   return (
     <div className='student'>
       <h3>This is a student</h3>
-      <p>Name: Omar Farhatul</p>
-      <p>Age: 30</p>
+      <p>Class: {grade}</p>
+      <p>Score: {score}</p>
     </div>
   )
 }
