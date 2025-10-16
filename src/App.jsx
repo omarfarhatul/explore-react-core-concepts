@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ToDo from './ToDo'
 import Actor from './Actor'
-import Singer from './Singer';
+import Singer from './Singer'
 
 function App() {
 
