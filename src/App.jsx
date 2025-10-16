@@ -53,7 +53,7 @@ function Developer(){
   return(
     <div style={developerStyle}>
       <h5>Developer page</h5>
-      <p>Coding: </p>
+      <p>Coding: HTML, CSS, JS, ReactJs, NodeJs</p>
     </div>
   )
 }
